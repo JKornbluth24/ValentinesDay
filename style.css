@@ -38,3 +38,20 @@ button {
     background-color: #adb5bd;
     color: white;
 }
+
+.chicken {
+    position: absolute;
+    font-size: 2rem;
+    animation: run 6s linear infinite;
+    pointer-events: none;
+}
+
+@keyframes run {
+    from {
+        transform: translateX(-50px);
+    }
+    to {
+        transform: translateX(110vw);
+    }
+}
+
