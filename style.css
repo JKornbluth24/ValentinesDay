@@ -8,6 +8,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    overflow: hidden;
 }
 
 h1 {
@@ -39,3 +41,22 @@ button {
     color: white;
 }
 
+/* CHICKENS */
+
+.chicken {
+    position: absolute;
+    font-size: 2rem;
+    pointer-events: none;
+    animation-name: run;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes run {
+    from {
+        left: -50px;
+    }
+    to {
+        left: 110vw;
+    }
+}
