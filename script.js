@@ -1,12 +1,12 @@
 const yesButton = document.getElementById("yesBtn");
 const noButton = document.getElementById("noBtn");
 
-// YES CLICK
+// YES BUTTON
 yesButton.addEventListener("click", () => {
     document.body.innerHTML = "<h1>YAY!!! 💖💖💖</h1><p>I knew you'd say yes 😘</p>";
 });
 
-// NO RUNS AWAY
+// NO BUTTON RUNS AWAY
 noButton.addEventListener("mouseover", () => {
     const x = Math.random() * (window.innerWidth - noButton.offsetWidth);
     const y = Math.random() * (window.innerHeight - noButton.offsetHeight);
@@ -16,21 +16,21 @@ noButton.addEventListener("mouseover", () => {
     noButton.style.top = y + "px";
 });
 
-// CREATE CHICKEN
+// CREATE CHICKENS
 function createChicken() {
     const chicken = document.createElement("div");
-    chicken.className = "chicken";
-    chicken.textContent = "🐔";
+    chicken.innerText = "🐔";
+    chicken.classList.add("chicken");
 
     chicken.style.top = Math.random() * window.innerHeight + "px";
-    chicken.style.animationDuration = (Math.random() * 3 + 3) + "s";
+    chicken.style.animationDuration = (Math.random() * 3 + 4) + "s";
 
     document.body.appendChild(chicken);
 
     setTimeout(() => {
         chicken.remove();
-    }, 7000);
+    }, 8000);
 }
 
-// SPAWN LOOP
-setInterval(createChicken, 500);
+// SPAWN CHICKENS CONTINUOUSLY
+setInterval(createChicken, 700);
