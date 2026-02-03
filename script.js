@@ -22,15 +22,22 @@ function createChicken() {
     chicken.className = "chicken";
     chicken.textContent = "🐔";
 
-    chicken.style.top = Math.random() * window.innerHeight + "px";
+    // Random vertical position
+    chicken.style.top = Math.random() * (window.innerHeight - 50) + "px";
+
+    // Start offscreen left
+    chicken.style.left = "-50px";
+
+    // Random speed
     chicken.style.animationDuration = (Math.random() * 3 + 3) + "s";
 
     document.body.appendChild(chicken);
 
+    // Remove after animation ends
     setTimeout(() => {
         chicken.remove();
-    }, 7000);
+    }, parseFloat(chicken.style.animationDuration) * 1000);
 }
 
 // SPAWN LOOP
-setInterval(createChicken, 500);
+setInterval(createChicken, 700);
