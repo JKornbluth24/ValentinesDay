@@ -3,7 +3,7 @@ const noButton = document.getElementById("noBtn");
 
 // YES CLICK
 yesButton.addEventListener("click", () => {
-    document.body.innerHTML = "<h1>YAY!!! 💖💖💖</h1><p>I knew you'd say yes 😘</p>";
+    document.body.innerHTML = "<h1>YAY!!! 💖💖💖</h1><p>I knew you'd say yes 🐔🐔🐔😘</p>";
 });
 
 // NO RUNS AWAY
