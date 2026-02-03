@@ -1,0 +1,40 @@
+body {
+    background-color: #ffdde1;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 3rem;
+    color: #c9184a;
+    margin-bottom: 40px;
+}
+
+.buttons {
+    display: flex;
+    gap: 30px;
+}
+
+button {
+    font-size: 1.5rem;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+#yesBtn {
+    background-color: #ff4d6d;
+    color: white;
+}
+
+#noBtn {
+    background-color: #adb5bd;
+    color: white;
+}
