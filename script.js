@@ -16,4 +16,21 @@ noButton.addEventListener("mouseover", () => {
     noButton.style.top = y + "px";
 });
 
+// CREATE CHICKENS
+function createChicken() {
+    const chicken = document.createElement("div");
+    chicken.innerText = "🐔";
+    chicken.classList.add("chicken");
 
+    chicken.style.top = Math.random() * window.innerHeight + "px";
+    chicken.style.animationDuration = (Math.random() * 3 + 4) + "s";
+
+    document.body.appendChild(chicken);
+
+    setTimeout(() => {
+        chicken.remove();
+    }, 8000);
+}
+
+// SPAWN CHICKENS CONTINUOUSLY
+setInterval(createChicken, 700);
