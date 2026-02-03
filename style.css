@@ -1,3 +1,5 @@
+/* PAGE LAYOUT */
+
 body {
     background-color: #ffdde1;
     font-family: Arial, sans-serif;
@@ -12,16 +14,22 @@ body {
     overflow: hidden;
 }
 
+/* TEXT */
+
 h1 {
     font-size: 3rem;
     color: #c9184a;
     margin-bottom: 40px;
 }
 
+/* BUTTON AREA */
+
 .buttons {
     display: flex;
     gap: 30px;
 }
+
+/* BUTTONS */
 
 button {
     font-size: 1.5rem;
@@ -29,6 +37,11 @@ button {
     border: none;
     border-radius: 12px;
     cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+button:hover {
+    transform: scale(1.1);
 }
 
 #yesBtn {
